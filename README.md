@@ -23,8 +23,6 @@ A beginner-friendly Docker hands-on project that teaches you how to containerize
 </p>
 </div>
 
----
-
 ## 📚 Project Overview and Learning Objectives
 
 This project provides a **pre-built Node.js Express REST API** with in-memory CRUD operations, designed specifically for **DevOps and Cloud engineers** learning Docker containerization.
@@ -48,8 +46,6 @@ This project provides a **pre-built Node.js Express REST API** with in-memory CR
 - A production-ready application (no database, data doesn't persist)
 - A Node.js development tutorial (focus is on Docker, not coding)
 
----
-
 ## 🛠️ Prerequisites
 
 Before you begin, ensure you have the following installed on your system:
@@ -70,8 +66,6 @@ docker --version
 docker-compose --version
 # Expected output: Docker Compose version 2.x.x or higher
 ```
-
----
 
 ## 🚀 Complete Step-by-Step Instructions
 
