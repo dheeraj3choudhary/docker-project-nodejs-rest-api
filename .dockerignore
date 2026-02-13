@@ -1,0 +1,62 @@
+# .dockerignore
+# Files and directories to exclude when building Docker image
+# This reduces image size and build time by excluding unnecessary files
+
+# Node.js dependencies
+# We'll install these inside the container, no need to copy from host
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Git files
+# Version control files aren't needed in the container
+.git/
+.gitignore
+.gitattributes
+
+# Docker files
+# Don't copy Docker configuration into the image itself
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Documentation
+# README and docs are for developers, not runtime
+README.md
+*.md
+
+# Environment files
+# Don't copy actual secrets into image (use .env.example only for reference)
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files
+# Development tool configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing and coverage
+# Test files and coverage reports aren't needed in production
+test/
+tests/
+*.test.js
+*.spec.js
+coverage/
+.nyc_output/
+
+# CI/CD files
+# Build pipeline configs
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Logs
+# Local log files
+logs/
+*.log

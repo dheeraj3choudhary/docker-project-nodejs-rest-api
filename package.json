@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-hello-world-api",
+  "version": "1.0.0",
+  "description": "Simple Node.js REST API with CRUD operations for Docker learning",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "rest-api",
+    "docker",
+    "crud"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

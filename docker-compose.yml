@@ -1,0 +1,51 @@
+# Docker Compose configuration for Node.js Hello World API
+# This file uses official Node.js image directly - NO Dockerfile needed
+
+services:
+  # Service name - you can have multiple services in one compose file
+  nodejs-api:
+    
+    # Use official Node.js 18 Alpine image directly from Docker Hub
+    # Alpine is a lightweight Linux distribution (~5MB base)
+    image: node:18-alpine
+    
+    # Container name (optional but recommended for easy identification)
+    container_name: nodejs-hello-api
+    
+    # Working directory inside the container
+    # All commands will execute from this directory
+    working_dir: /usr/src/app
+    
+    # Mount current directory into container
+    # This makes your code available inside the container
+    # Format: HOST_PATH:CONTAINER_PATH
+    volumes:
+      - ./:/usr/src/app
+    
+    # Port mapping: HOST_PORT:CONTAINER_PORT
+    # Maps port 3000 on your machine to port 3000 inside the container
+    ports:
+      - "3000:3000"
+    
+    # Command to run when container starts
+    # First install dependencies, then start the app
+    command: sh -c "npm install --only=production --silent && npm start"
+    
+    # Environment variables
+    # These are passed into the container at runtime
+    environment:
+      - NODE_ENV=production   # Set Node.js environment
+      - PORT=3000             # Port the app listens on inside container
+    
+    # Restart policy
+    # 'unless-stopped' means container restarts automatically unless manually stopped
+    restart: unless-stopped
+    
+    # Health check (optional but good practice)
+    # Docker will periodically check if the container is healthy
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/"]
+      interval: 30s    # Check every 30 seconds
+      timeout: 10s     # Wait 10 seconds for response
+      retries: 3       # Retry 3 times before marking unhealthy
+      start_period: 40s # Wait 40s before first check (app startup time)
