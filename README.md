@@ -1,6 +1,27 @@
+<div align="center">
+ 
 # Node.js Hello World API - Docker Tutorial
 
 A beginner-friendly Docker hands-on project that teaches you how to containerize a Node.js REST API with full CRUD operations using Docker Compose.
+
+<img width="4000" height="2250" alt="Project2_Arch_Diag" src="https://github.com/user-attachments/assets/39ffc56c-a999-499b-a958-9184d584b66c" />
+
+<a href="https://www.buymeacoffee.com/Dheeraj3" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" height="50">
+</a>
+
+## [Subscribe](https://www.youtube.com/@dheeraj-choudhary?sub_confirmation=1) to learn more About Artificial-Intellegence, Machine-Learning, Cloud & DevOps.
+
+<p align="center">
+<a href="https://www.linkedin.com/in/dheeraj-choudhary/" target="_blank">
+  <img height="100" alt="Dheeraj Choudhary | LinkedIN"  src="https://user-images.githubusercontent.com/60597290/152035581-a7c6c0c3-65c3-4160-89c0-e90ddc1e8d4e.png"/>
+</a> 
+
+<a href="https://www.youtube.com/@dheeraj-choudhary?sub_confirmation=1">
+    <img height="100" src="https://user-images.githubusercontent.com/60597290/152035929-b7f75d38-e1c2-4325-a97e-7b934b8534e2.png" />
+</a>    
+</p>
+</div>
 
 ---
 
