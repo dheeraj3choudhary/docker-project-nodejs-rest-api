@@ -4,7 +4,7 @@
 
 A beginner-friendly Docker hands-on project that teaches you how to containerize a Node.js REST API with full CRUD operations using Docker Compose.
 
-<img width="4000" height="2250" alt="Project2_Arch_Diag" src="https://github.com/user-attachments/assets/39ffc56c-a999-499b-a958-9184d584b66c" />
+<img width="4000" height="2250" alt="Nodejs_Arch_Diag" src="https://github.com/user-attachments/assets/4f2674fd-e290-46ad-b2ff-26e63f0dfdcb" />
 
 <a href="https://www.buymeacoffee.com/Dheeraj3" target="_blank">
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" height="50">
