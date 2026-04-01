@@ -1,6 +1,6 @@
 <div align="center">
  
-# Node.js Hello World API - Docker Tutorial
+# Node.js Rest API - Docker Tutorial
 
 A beginner-friendly Docker hands-on project that teaches you how to containerize a Node.js REST API with full CRUD operations using Docker Compose.
 
